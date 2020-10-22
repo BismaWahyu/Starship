@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import { Modal, Button } from 'react-bootstrap';
+import './../styles.css';
 
 export class DetailModal extends Component{
-    
-    constructor(props){
-        super(props);
-    }
     
     render(){
         return(
