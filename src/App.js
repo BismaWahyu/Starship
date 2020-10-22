@@ -121,7 +121,7 @@ export default function App(){
                 {loading && <div className="spinner-grow text-primary" role="status">
                   <span className="sr-only">Loading...</span>
                 </div> }
-                {!loading && starships.length === 0 && <h3>Data not Found</h3>}
+                {!loading && searchShip.length === 0 && <h3>Data not Found</h3>}
               </div>
             </div>
           </div>
