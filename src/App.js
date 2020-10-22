@@ -4,6 +4,7 @@ import img from './assets/images/image.jpg';
 import GlobalService from './api/globalService';
 import axios from 'axios';
 import { DetailModal } from './components/DetailModal';
+import { SearchCard } from './components/SearchCard';
 import { Container, Button, darkColors, lightColors } from 'react-floating-action-button';
 
 export default function App(){
@@ -60,19 +61,7 @@ export default function App(){
 
   return (
     <>
-      <div className="container py-5">
-        <div className="row text-center mb-2">
-          <div className="col-lg-12 mx-auto block">
-              <h1 className="display-4 title-text">Starship List</h1>
-          </div>
-          <div className="col-lg-8 mx-auto mt-3 block">
-          <form className="form-inline d-flex justify-content-center md-form form-sm">
-            <input className="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
-              aria-label="Search" value={query} onChange={handleSearch} />
-          </form>
-          </div>
-        </div>
-      </div>
+      <SearchCard query={query} handle={handleSearch}/>
       
       <div className="container mt-50">
         <div className="row">
@@ -200,9 +189,7 @@ export default function App(){
           
         </div>
       </div>
-    
      
-      
       <DetailModal
         show={modal}
         onHide={modalClose}

@@ -1,4 +1,9 @@
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+
+body{
+  background-color: #f0f0f0;
+}
+
 .title-text {
   color: black;
 }
@@ -192,4 +197,27 @@ Hover the image
     font-size: 17px;
     color: #FFF;
     font-weight: bold;
+}
+
+.card {
+    margin-top: 1em;
+}
+
+.search-card {
+    margin-top: 5em;
+    padding-top: 5em;
+    background-color: #0ea8c7;
+}
+.search-card .card-title{
+    text-align: center;
+}
+.search-card .icon-img{
+    width: 10em;
+    position: absolute;
+    top: -5em;
+    left: 50%;
+    margin-left: -5em;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: white;
 }
